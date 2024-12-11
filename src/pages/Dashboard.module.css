@@ -1,0 +1,478 @@
+/* General Dashboard Layout */
+.dashboard {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+}
+
+.dashboardHeader {
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: fit-content;
+  color: #ffffff;
+  background: linear-gradient(90deg, #4caf50, #2196f3); 
+  padding: 15px 30px; 
+  border-radius: 10px; 
+  text-align: center; 
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15); 
+  margin-bottom: 30px; 
+  transition: all 0.3s ease; 
+}
+
+.dashboardHeader:hover {
+  background: linear-gradient(90deg, #2196f3, #4caf50);
+  transform: scale(1.05); 
+}
+
+
+.dashsections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+/* Welcome Section */
+.welcomeSection {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 100%;
+}
+
+.welcomeHeader h2 {
+  margin: 0;
+  font-size: 24px;
+  color: #333;
+}
+
+.welcomeHeader p {
+  margin: 4px 0;
+  color: #777;
+  font-size: 18px;
+}
+
+.welcomeContent {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-top: 20px;
+  text-align: center;
+}
+
+.avatarImage {
+  width: 100px;
+  height: 100px;
+  border-radius: 50%;
+  border: 3px solid #007bff;
+}
+
+.stats {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin: 20px 0;
+}
+
+.stats > div {
+  flex: 1;
+  text-align: center;
+}
+
+.stats h3 {
+  font-size: 20px;
+  margin: 0;
+}
+
+.label {
+  color: #777;
+  font-size: 14px;
+}
+
+.profileButton {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.profileButton:hover {
+  background-color: #0056b3;
+}
+
+/* Quick Draft Section */
+.quickDraftSection {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 100%;
+}
+
+.quickDraftSection h2 {
+  margin: 0 0 10px;
+  font-size: 24px;
+  color: #333;
+}
+
+.quickDraftSection p {
+  margin: 0 0 20px;
+  color: #777;
+  font-size: 16px;
+}
+
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 15px;
+}
+
+.input {
+  width: 80%;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.textarea {
+  width: 80%;
+  resize: none;
+  min-height: 100px;
+  padding: 12px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 16px;
+}
+
+.saveButton {
+  background-color: #28a745;
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.saveButton:hover {
+  background-color: #218838;
+}
+
+/* Yearly Targets Section */
+.yearlyTargetsSection {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 100%;
+}
+
+.yearlyTargets,
+.ticketStatistics {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+}
+
+.yearlyTargets h2,
+.ticketStatistics h2 {
+  font-size: 24px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.targetCard,
+.ticketCard {
+  margin-bottom: 15px;
+}
+
+.targetHeader,
+.ticketHeader {
+  font-size: 18px;
+  color: #333;
+}
+
+.targetAmount,
+.ticketValue {
+  font-size: 32px;
+  font-weight: bold;
+  color: #007bff;
+}
+
+.progressBar {
+  height: 5px;
+  background-color: #e0e0e0;
+  border-radius: 5px;
+  margin-top: 10px;
+}
+
+.moneyProgress,
+.projectProgress,
+.teamProgress {
+  height: 100%;
+  background-color: #007bff;
+  border-radius: 5px;
+}
+
+.targetProgress {
+  font-size: 14px;
+  color: #777;
+}
+
+.ticketStatistics{
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 15px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .dashboard {
+    flex-direction: column; /* Stack sections vertically */
+  }
+  .dashsections {
+    grid-template-columns: 1fr; /* Stack columns in single column for small screens */
+  }
+}
+
+
+/* Ticket Card Style */
+.ticketCard {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  transition: transform 0.3s, box-shadow 0.3s;
+  display: grid;
+  justify-content: space-between;
+}
+
+.ticketCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 30px rgba(0, 0, 0, 0.2);
+}
+
+.ticketHeader {
+  font-size: 20px;
+  font-weight: bold;
+  color: #333;
+  margin-bottom: 10px;
+}
+
+.ticketValue {
+  font-size: 28px;
+  font-weight: bold;
+  color: #007bff;
+  margin-bottom: 15px;
+  transition: color 0.3s ease;
+}
+
+.ticketCard:hover .ticketValue {
+  color: #28a745; /* Change color on hover */
+}
+
+.ticketCard > .ticketValue {
+  text-align: center;
+}
+
+.ticketCard .progressBar {
+  width: 100%;
+  height: 8px;
+  background-color: #f0f0f0;
+  border-radius: 8px;
+  margin-top: 10px;
+}
+
+.ticketCard .progressBar .progress {
+  height: 100%;
+  border-radius: 8px;
+  transition: width 0.3s ease;
+}
+
+.ticketCard .progressBar .progress.total {
+  background-color: #007bff;
+}
+
+.ticketCard .progressBar .progress.pending {
+  background-color: #f39c12;
+}
+
+.ticketCard .progressBar .progress.closed {
+  background-color: #28a745;
+}
+
+.ticketCard .progressBar .progress.deleted {
+  background-color: #e74c3c;
+}
+
+/* Add a subtle animation effect to progress bars */
+.ticketCard .progressBar .progress {
+  transition: width 0.5s ease-in-out;
+}
+
+
+
+/* Upload Widget */
+.latestUploads {
+  padding: 20px;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.latestUploads h2 {
+  margin: 0 0 20px;
+  font-size: 1.5rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.listItem {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 10px;
+  margin-bottom: 10px;
+  border-bottom: 1px solid #f0f0f0;
+}
+
+.listItem:last-child {
+  border-bottom: none;
+}
+
+.d-flex {
+  display: flex;
+  align-items: center;
+}
+
+img {
+  width: 40px;
+  height: 40px;
+  margin-right: 10px;
+}
+
+.fileDetails {
+  display: flex;
+  flex-direction: column;
+}
+
+.fileName {
+  font-size: 1rem;
+  color: #333;
+  font-weight: bold;
+}
+
+.userName {
+  font-size: 0.9rem;
+  color: #888;
+}
+
+.btnShape {
+  background-color: #f5f5f5;
+  padding: 5px 10px;
+  border-radius: 20px;
+  font-size: 0.85rem;
+  color: #555;
+  font-weight: bold;
+}
+
+/* Social Media Wedgit  */
+
+.socialMedia {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+  position: relative;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 25px;
+}
+
+.box {
+  padding: 15px;
+  padding-left: 70px;
+  position: relative;
+  margin-bottom: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.box i {
+  position: absolute;
+  left: 0;
+  top: 0;
+  width: 52px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100%;
+  transition: 0.3s;
+}
+
+.box i:hover {
+  transform: rotate(5deg);
+}
+
+.btnShape1 {
+  font-size: 13px;
+  color: black;
+  font-weight: bold;
+  text-decoration: none;
+  border-radius: 5px;
+  padding: 5px 10px;
+}
+
+.twitter {
+  background-color: rgba(29, 161, 242, 0.2);
+  color: #1da1f2;
+}
+
+.twitter i,
+.twitter .btnShape1 {
+  background-color: #1da0f236;
+}
+
+.facebook {
+  background-color: rgba(24, 119, 242, 0.2);
+  color: #1877f2;
+}
+
+.facebook i,
+.facebook .btnShape1 {
+  background-color: #1876f233;
+}
+
+.youtube {
+  background-color: rgba(255, 0, 0, 0.2);
+  color: #ff0000;
+}
+
+.youtube i,
+.youtube .btnShape1 {
+  background-color: #ff00003b;
+}
+
+.linkedin {
+  background-color: rgba(0, 119, 181, 0.2);
+  color: #0077b5;
+}
+
+.linkedin i,
+.linkedin .btnShape1 {
+  background-color: #0076b540;
+}

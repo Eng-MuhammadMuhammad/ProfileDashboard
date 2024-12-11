@@ -1,25 +1,38 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react';
+import { Routes, Route } from 'react-router-dom';
+import '@fortawesome/fontawesome-free/css/all.min.css';
 
-function App() {
+
+
+import Header from './components/Header';
+import Sidebar from './components/Sidebar';
+import Dashboard from './pages/Dashboard';
+import Profile from './pages/Profile';
+import Settings from './pages/Settings';
+import Projects from './pages/Projects';
+import Files from './pages/Files';
+import Courses from './pages/Courses';
+import styles from './App.module.css';
+
+const App = () => {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div className={styles.app}>
+      <Header />
+      <div className={styles.mainLayout}>
+        <Sidebar />
+        <div className={styles.content}>
+          <Routes>
+            <Route path="/" element={<Dashboard />} />
+            <Route path="/profile" element={<Profile />} />
+            <Route path="/settings" element={<Settings />} />
+            <Route path="/projects" element={<Projects />} />
+            <Route path="/files" element={<Files />} />
+            <Route path="/courses" element={<Courses />} />
+          </Routes>
+        </div>
+      </div>
     </div>
   );
-}
+};
 
 export default App;

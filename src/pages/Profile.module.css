@@ -1,0 +1,320 @@
+.profile {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+}
+
+.profileheader {
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: fit-content;
+  color: #ffffff;
+  background: linear-gradient(90deg, #4caf50, #2196f3);
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.profileheader:hover {
+  background: linear-gradient(90deg, #2196f3, #4caf50);
+  transform: scale(1.05);
+}
+
+/* Start Overview  */
+.overview {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+  padding: 20px;
+  gap: 20px;
+}
+
+.avatarBox {
+  text-align: center;
+  padding: 20px;
+  width: 300px;
+}
+
+.avatarBox img {
+  border-radius: 50%;
+  width: 120px;
+  height: 120px;
+  margin-bottom: 10px;
+}
+
+.level {
+  height: 6px;
+  overflow: hidden;
+  margin: auto;
+  width: 70%;
+  position: relative;
+}
+
+.level span {
+  position: absolute;
+  left: 0;
+  top: 0;
+  height: 100%;
+  background-color: var(--blue-color);
+  border-radius: 6px;
+}
+
+.infoBox {
+  width: 100%;
+  text-align: center;
+}
+
+.infoBox .box {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  text-align: left;
+  flex-wrap: wrap;
+  border-bottom: 1px solid #eee;
+  transition: 0.3s;
+}
+
+.infoBox .box:hover {
+  background-color: #f9f9f9;
+}
+
+.infoBox .box > div {
+  min-width: 250px;
+  padding: 10px 0 0;
+}
+
+.infoBox h4 {
+  font-weight: normal;
+  font-size: 15px;
+  margin: 0;
+  width: 100%;
+}
+
+.rating {
+  margin-top: 10px;
+  margin-bottom: 10px;
+}
+
+.txtC {
+  text-align: center;
+}
+
+.cGrey {
+  color: grey;
+}
+
+.cOrange {
+  color: orange;
+}
+
+.m0 {
+  margin: 0;
+}
+
+.p20 {
+  padding: 20px;
+}
+
+.mt10 {
+  margin-top: 10px;
+}
+
+.mb10 {
+  margin-bottom: 10px;
+}
+
+.fs13 {
+  font-size: 13px;
+}
+
+.fs15 {
+  font-size: 15px;
+}
+
+.wFull {
+  width: 100%;
+}
+
+.dFlex {
+  display: flex;
+}
+
+.alignCenter {
+  align-items: center;
+}
+
+.rad10 {
+  border-radius: 10px;
+}
+
+/* End Overview  */
+
+/* Start Other Data */
+.otherinfosection {
+  display: grid;
+  grid-template-columns: 1fr 3fr;
+  gap: 20px;
+}
+
+.otherData {
+  display: flex;
+  align-items: center;
+  background: white;
+  border-radius: 10px;
+}
+
+.skillsCard ul {
+  list-style-type: none;
+}
+
+.skillsCard ul li {
+  padding: 15px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.skillsCard ul li span {
+  display: inline-flex;
+  padding: 4px 10px;
+  background-color: #eee;
+  border-radius: 6px;
+  font-size: 14px;
+  margin-right: 5px;
+}
+
+.activities {
+  width: 100%;
+}
+
+.activities .activity:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+  padding-bottom: 20px;
+  margin-bottom: 20px;
+}
+
+.activities .activity img {
+  width: 64px;
+  height: 64px;
+  margin-right: 10px;
+}
+
+.activity .date {
+  margin-left: auto;
+  text-align: right;
+}
+
+/* Responsive design adjustments */
+@media (max-width: 1024px) {
+  .profile {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .profileheader {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+
+  .overview {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .avatarBox {
+    width: 200px;
+  }
+
+  .infoBox .box > div {
+    min-width: 200px;
+  }
+
+  .otherinfosection {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 767px) {
+  .overview {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .avatarBox {
+    width: 150px;
+  }
+
+  .avatarBox img {
+    width: 100px;
+    height: 100px;
+  }
+
+  .infoBox .box > div {
+    min-width: 100%;
+  }
+
+  .otherinfosection {
+    grid-template-columns: 1fr;
+  }
+
+  .skillsCard ul li {
+    padding: 10px 0;
+  }
+  .activities{
+   width: 100%; 
+  }
+
+  .activities .activity img {
+    width: 50px;
+    height: 50px;
+    margin-right: 5px;
+  }
+
+  .activity .date {
+    margin-left: auto;
+    text-align: left;
+  }
+}
+
+@media (max-width: 480px) {
+  .profileheader {
+    font-size: 1.5rem;
+    margin-bottom: 15px;
+  }
+
+  .overview {
+    padding: 10px;
+  }
+
+  .avatarBox {
+    width: 120px;
+  }
+
+  .avatarBox img {
+    width: 80px;
+    height: 80px;
+  }
+
+  .infoBox .box > div {
+    min-width: 100%;
+  }
+
+  .otherData {
+    flex-direction: column;
+  }
+
+  .skillsCard ul li {
+    padding: 8px 0;
+  }
+
+  .activities .activity img {
+    width: 40px;
+    height: 40px;
+  }
+}

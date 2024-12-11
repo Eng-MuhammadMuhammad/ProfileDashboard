@@ -1,0 +1,194 @@
+/* Main container with flexible layout */
+.main_container {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+}
+
+/* Header styling */
+.main_Header {
+  font-size: 2.5rem;
+  font-weight: bold;
+  color: #ffffff;
+  background: linear-gradient(90deg, #4caf50, #2196f3);
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+  width: fit-content;
+}
+
+.main_Header:hover {
+  background: linear-gradient(90deg, #2196f3, #4caf50);
+  transform: scale(1.05);
+}
+
+/* Tab sections (Grid layout for courses) */
+.Tab_sections {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr); /* Default: 4 equal columns */
+  gap: 20px;
+  width: 100%;
+  margin-top: 20px;
+}
+
+/* Individual section styling */
+.section {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 100%; /* Ensures proper scaling */
+}
+
+/* Course card styling */
+.course {
+  background-color: white;
+  border-radius: 6px;
+  position: relative;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.course:hover {
+  transform: scale(1.05);
+  box-shadow: 0 4px 20px rgba(0, 0, 0, 0.15);
+}
+
+/* Course cover image styling */
+.cover {
+  width: 100%;
+  height: auto;
+  border-radius: 6px 6px 0 0;
+}
+
+/* Instructor image styling */
+.instructor {
+  position: absolute;
+  top: 20px;
+  left: 20px;
+  border-radius: 50%;
+  width: 50px;
+  height: 50px;
+  object-fit: cover;
+  border: 2px solid white;
+}
+
+/* Padding class for consistent spacing */
+.p20 {
+  padding: 20px;
+}
+
+/* Margin class */
+.m0 {
+  margin: 0;
+}
+
+/* Description text styling */
+.description {
+  color: grey;
+  margin-top: 15px;
+  font-size: 14px;
+  line-height: 1.6;
+}
+
+/* Info section with flex layout */
+.info {
+  padding: 15px;
+  position: relative;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 13px;
+  border-top: 1px solid #eee;
+}
+
+/* Title in info section */
+.title {
+  background-color: blue;
+  color: white;
+  padding: 5px 10px;
+  border-radius: 50px;
+  font-size: 13px;
+}
+
+/* Flexbox to space out elements */
+.betweenFlex {
+  display: flex;
+  justify-content: space-between;
+}
+
+/* Button shape */
+.btnShape {
+  border-radius: 50px;
+}
+
+.bgBlue {
+  background-color: blue;
+}
+
+.cWhite {
+  color: white;
+}
+
+.cGrey {
+  color: grey;
+}
+
+.mt15 {
+  margin-top: 15px;
+}
+
+/* Responsive layout for courses page */
+.coursesPage {
+  grid-template-columns: repeat(auto-fill, minmax(300px, 1fr)); /* Adjust column count based on screen size */
+}
+
+@media (max-width: 1024px) {
+  .Tab_sections {
+    grid-template-columns: repeat(3, 1fr); /* 3 columns for medium screens */
+  }
+
+  .main_Header {
+    font-size: 2rem; /* Slightly smaller header text for medium screens */
+  }
+}
+
+@media (max-width: 767px) {
+  .coursesPage {
+    grid-template-columns: minmax(200px, 1fr); /* 1 column layout for smaller screens */
+    margin-left: 10px;
+    margin-right: 10px;
+    gap: 10px;
+  }
+
+  .main_Header {
+    font-size: 1.5rem; /* Even smaller header text for mobile */
+    padding: 10px 20px; /* Reduce padding for smaller screens */
+  }
+
+  .instructor {
+    width: 40px;
+    height: 40px; /* Smaller instructor image for mobile */
+  }
+
+  .course {
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Smaller shadow for mobile */
+  }
+
+  .cover {
+    border-radius: 6px;
+  }
+
+  .description {
+    font-size: 12px; /* Smaller description text for mobile */
+  }
+}
+
+/* End of Responsive adjustments */

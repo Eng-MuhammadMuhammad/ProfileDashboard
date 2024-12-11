@@ -1,0 +1,517 @@
+.settings {
+  display: flex;
+  gap: 20px;
+  padding: 20px;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  background-color: #f8f9fa;
+  box-sizing: border-box;
+}
+
+.settingsHeader {
+  font-size: 2.5rem;
+  font-weight: bold;
+  width: fit-content;
+  color: #ffffff;
+  background: linear-gradient(90deg, #4caf50, #2196f3);
+  padding: 15px 30px;
+  border-radius: 10px;
+  text-align: center;
+  box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.15);
+  margin-bottom: 30px;
+  transition: all 0.3s ease;
+}
+
+.settingsHeader:hover {
+  background: linear-gradient(90deg, #2196f3, #4caf50);
+  transform: scale(1.05); 
+}
+
+.settingssections {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 20px;
+  width: 100%;
+}
+
+.section {
+  background-color: #fff;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  max-width: 100%;
+}
+
+.text_message {
+  border: 1px solid #ddd; /* Subtle border */
+  border-radius: 8px; /* Rounded corners */
+  padding: 12px 16px; /* Spacing inside */
+  font-size: 16px; /* Modern font size */
+  font-family: "Arial", sans-serif; /* Clean font */
+  outline: none; /* Remove blue outline on focus */
+  width: 100%; /* Full width */
+  height: 150px; /* Fixed height */
+  resize: none; /* Disable resizing */
+  background-color: #f9f9f9; /* Light gray background */
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+  transition: border-color 0.3s, box-shadow 0.3s; /* Smooth hover/focus effects */
+}
+
+.text_message:focus {
+  border-color: #007bff; /* Blue border on focus */
+  box-shadow: 0 4px 8px rgba(0, 123, 255, 0.2); /* Enhanced shadow on focus */
+  background-color: #fff; /* Brighten background */
+}
+
+/* --------------------------------------------------- */
+
+.container {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.heading {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: grey;
+  font-size: 15px;
+}
+
+.inputGroup {
+  margin-bottom: 15px;
+}
+
+.label {
+  font-size: 14px;
+  color: grey;
+  display: block;
+  margin-bottom: 10px;
+  padding-right: 20px;
+}
+
+.email_label{
+  font-size: 14px;
+  color: grey;
+  display: block;
+  margin-bottom: 10px;
+  padding-right: 40px;
+}
+
+.input {
+  border: none;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 6px;
+  display: block;
+  width: 90%;
+}
+
+.email {
+  display: inline-flex;
+  width: calc(100% - 80px);
+}
+
+.link {
+  color: white;
+  background-color: blue;
+  padding: 5px;
+  margin: 3px;
+  border: none;
+  border-radius: 4px;
+  text-decoration: none;
+  padding-left: 10px;
+}
+
+/* --------------------------------------------------- */
+.header {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.subHeader {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: grey;
+  font-size: 15px;
+}
+
+.secBox {
+  padding-bottom: 15px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.secBox:not(:last-of-type) {
+  border-bottom: 1px solid #eee;
+}
+
+.textGrey {
+  color: grey;
+}
+
+.textSmall {
+  margin-top: 5px;
+  margin-bottom: 0;
+  font-size: 13px;
+}
+
+.betweenFlex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.button {
+  transition: 0.3s;
+  border-radius: 5px;
+  padding: 5px 10px;
+  text-decoration: none;
+}
+
+.button:hover {
+  background-color: black;
+  color: white;
+}
+
+.bgBlue {
+  background-color: blue;
+}
+
+.textWhite {
+  color: white;
+}
+
+.bgGrey {
+  background-color: #eee;
+  text-decoration: none;
+  margin-top: 10px;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.bgGrey:hover {
+  background-color: black;
+  color: white;
+}
+
+.textBlack {
+  color: black;
+}
+
+/* ---------------------------------------------------- */
+.socialBoxes i {
+  width: 40px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  transition: 0.3s;
+}
+.socialBoxes input {
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  border-radius: 0 6px 6px 0;
+}
+.socialBoxes > div:focus-within i {
+  color: black;
+}
+
+.socialBoxes {
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 10px;
+}
+
+.heading {
+  margin: 0 0 10px 0;
+}
+
+.description {
+  margin: 0 0 20px 0;
+  color: grey;
+  font-size: 15px;
+}
+
+.inputGroup {
+  display: flex;
+  align-items: center;
+}
+
+.marginBottom {
+  margin-bottom: 15px;
+}
+
+.icon {
+  width: 40px;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  border-right: none;
+  border-radius: 6px 0 0 6px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: 0.3s;
+  color: grey;
+}
+
+.input {
+  width: 100%;
+  height: 40px;
+  background-color: #f6f6f6;
+  border: 1px solid #ddd;
+  padding-left: 10px;
+  border-radius: 0 6px 6px 0;
+}
+
+.inputGroup:focus-within .icon {
+  color: black;
+}
+
+/* ---------------------------------------------------- */
+.widgetsControl {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: gray;
+  font-size: 15px;
+}
+
+.control {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.control input[type="checkbox"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.control label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.control label::before,
+.control label::after {
+  position: absolute;
+  left: 0;
+  top: 50%;
+  margin-top: -9px;
+  border-radius: 4px;
+}
+
+.control label::before {
+  content: "";
+  width: 14px;
+  height: 14px;
+  border: 2px solid gray;
+}
+
+.control label:hover::before {
+  border-color: skyblue;
+}
+
+.control label::after {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00c";
+  font-weight: 900;
+  background-color: skyblue;
+  color: white;
+  font-size: 12px;
+  width: 18px;
+  height: 18px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform: scale(0) rotate(360deg);
+  transition: 0.3s;
+}
+
+.control input[type="checkbox"]:checked + label::after {
+  transform: scale(1);
+}
+
+/* -------------------------------------------------------------------------------------------- */
+.backupControl {
+  padding: 20px;
+  background-color: white;
+  border-radius: 10px;
+}
+
+.title {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.description {
+  margin-top: 0;
+  margin-bottom: 20px;
+  color: gray;
+  font-size: 15px;
+}
+
+.date {
+  display: flex;
+  align-items: center;
+  margin-bottom: 15px;
+}
+
+.date input[type="radio"] {
+  -webkit-appearance: none;
+  appearance: none;
+}
+
+.date label {
+  padding-left: 30px;
+  cursor: pointer;
+  position: relative;
+}
+
+.date label::before {
+  content: "";
+  position: absolute;
+  top: 50%;
+  left: 0;
+  margin-top: -11px;
+  width: 18px;
+  height: 18px;
+  border: 2px solid gray;
+  border-radius: 50%;
+}
+
+.date label::after {
+  content: "";
+  position: absolute;
+  left: 4px;
+  top: 5px;
+  width: 10px;
+  height: 10px;
+  background: skyblue;
+  border-radius: 50%;
+  transition: 0.3s;
+  transform: scale(0);
+}
+
+.date input[type="radio"]:checked + label::before {
+  border-color: skyblue;
+}
+
+.date input[type="radio"]:checked + label::after {
+  transform: scale(1);
+}
+
+.servers {
+  border-top: 1px solid #eee;
+  padding-top: 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+@media (max-width: 767px) {
+  .servers {
+    flex-wrap: wrap;
+  }
+}
+
+.server {
+  border: 2px solid #eee;
+  border-radius: 10px;
+  width: 100%;
+  margin-bottom: 15px;
+  position: relative;
+}
+
+.server label {
+  display: block;
+  margin: 15px;
+  cursor: pointer;
+}
+
+/* Hide the default radio button */
+.servers input[type="radio"] {
+  appearance: none; /* Standard */
+  -webkit-appearance: none; /* For Safari */
+  -moz-appearance: none; /* For Firefox */
+  position: absolute; /* Position it off-screen */
+  opacity: 0; /* Make it invisible */
+}
+
+/* Style the selected server's container */
+.servers input[type="radio"]:checked + .server {
+  border-color: skyblue;
+  color: skyblue;
+  box-shadow: 0 0 5px skyblue;
+}
+
+/* --------------------------------------------------------------------------------- */
+.toggleCheckbox {
+  -webkit-appearance: none;
+  appearance: none;
+  display: none;
+  padding: 30px;
+}
+.toggleSwitch {
+  background-color: #ccc;
+  width: 78px;
+  height: 32px;
+  border-radius: 16px;
+  position: relative;
+  transition: 0.3s;
+  cursor: pointer;
+}
+.toggleSwitch::before {
+  font-family: var(--fa-style-family-classic);
+  content: "\f00d";
+  font-weight: 900;
+  background-color: white;
+  width: 24px;
+  height: 24px;
+  position: absolute;
+  border-radius: 50%;
+  top: 4px;
+  left: 4px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #aaa;
+  transition: 0.3s;
+}
+.toggleCheckbox:checked + .toggleSwitch {
+  background-color: skyblue;
+}
+.toggleCheckbox:checked + .toggleSwitch::before {
+  content: "\f00c";
+  left: 50px;
+  color: var(--blue-color);
+}
+.disabled {
+  cursor: no-drop;
+  background-color: #f0f4f8;
+  color: #bbb;
+}
+/* End Settings */
