@@ -1,0 +1,36 @@
+{
+  "files": {
+    "main.css": "/ProfileDashboard/static/css/main.82295d20.css",
+    "main.js": "/ProfileDashboard/static/js/main.3869d4de.js",
+    "static/media/fa-solid-900.ttf": "/ProfileDashboard/static/media/fa-solid-900.ad1782c70927ebc5bc87.ttf",
+    "static/media/fa-brands-400.ttf": "/ProfileDashboard/static/media/fa-brands-400.26b80c8830bebf340211.ttf",
+    "static/media/activity-03.png": "/ProfileDashboard/static/media/activity-03.d98be99005d485661a2a.png",
+    "static/media/fa-solid-900.woff2": "/ProfileDashboard/static/media/fa-solid-900.83a538a018a9e44b023a.woff2",
+    "static/media/fa-brands-400.woff2": "/ProfileDashboard/static/media/fa-brands-400.fdbb558523a380307689.woff2",
+    "static/media/course-02.jpg": "/ProfileDashboard/static/media/course-02.03ec4ce7f4664c12e42b.jpg",
+    "static/media/fa-regular-400.ttf": "/ProfileDashboard/static/media/fa-regular-400.05fdd87be89f7f8f0a1e.ttf",
+    "static/media/activity-02.png": "/ProfileDashboard/static/media/activity-02.9d17ea7253559711a9dd.png",
+    "static/media/activity-01.png": "/ProfileDashboard/static/media/activity-01.7f3fdfcaaae6e15e2321.png",
+    "static/media/course-05.jpg": "/ProfileDashboard/static/media/course-05.d72b933bd8fce7b902e2.jpg",
+    "static/media/avatar.png": "/ProfileDashboard/static/media/avatar.a96eb7a29284bc051da9.png",
+    "static/media/fa-regular-400.woff2": "/ProfileDashboard/static/media/fa-regular-400.4f6a2dabee9c092d09b9.woff2",
+    "static/media/fa-v4compatibility.ttf": "/ProfileDashboard/static/media/fa-v4compatibility.fa86b3c85e77abbd2ebd.ttf",
+    "static/media/course-03.jpg": "/ProfileDashboard/static/media/course-03.1098123787f16ee990d0.jpg",
+    "static/media/course-04.jpg": "/ProfileDashboard/static/media/course-04.ddc48f09106f63f1b4fe.jpg",
+    "static/media/fa-v4compatibility.woff2": "/ProfileDashboard/static/media/fa-v4compatibility.c3ea317a0f10f201597f.woff2",
+    "static/media/sql.svg": "/ProfileDashboard/static/media/sql.f3fa4a92e1820997e087a53b858c957b.svg",
+    "static/media/eps.svg": "/ProfileDashboard/static/media/eps.4ff492e31752118e62ed3e97668e8100.svg",
+    "static/media/psd.svg": "/ProfileDashboard/static/media/psd.6dda1b1f76ae4c6047a57a6c5d1e4d94.svg",
+    "static/media/pdf.svg": "/ProfileDashboard/static/media/pdf.9ae431294cccc46fea9c16ea41a2fb13.svg",
+    "static/media/zip.svg": "/ProfileDashboard/static/media/zip.aaf8123f4b73998de3d686696ae4145a.svg",
+    "static/media/avi.svg": "/ProfileDashboard/static/media/avi.b31b126e336512377f7656922ebe7357.svg",
+    "static/media/dll.svg": "/ProfileDashboard/static/media/dll.7db3001414bd4da8d79264121905145f.svg",
+    "index.html": "/ProfileDashboard/index.html",
+    "main.82295d20.css.map": "/ProfileDashboard/static/css/main.82295d20.css.map",
+    "main.3869d4de.js.map": "/ProfileDashboard/static/js/main.3869d4de.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.82295d20.css",
+    "static/js/main.3869d4de.js"
+  ]
+}
