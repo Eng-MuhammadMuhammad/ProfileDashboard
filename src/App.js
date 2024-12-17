@@ -22,7 +22,7 @@ const App = () => {
         <Sidebar />
         <div className={styles.content}>
           <Routes>
-            <Route path="/" element={<Dashboard />} />
+            <Route path="*" element={<Dashboard />} />
             <Route path="/profile" element={<Profile />} />
             <Route path="/settings" element={<Settings />} />
             <Route path="/projects" element={<Projects />} />
